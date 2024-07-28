@@ -17,47 +17,54 @@ $result = mysqli_query($conn, $sql);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../../../public/css/globals.scss">
-    <link rel="stylesheet" href="./dashboard.scss">
+    <link rel="stylesheet" href="./dashboard.css">
     <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/public/assets/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <?php include '../../includes/message.php'; ?>
-    <div class="container">
-        <div class='top-bar'>
-            <a class="brand" href="./dashboard.php">
-                <img src="../../../public/assets/logo.png" alt="Assignmate Logo">
-                <h1>Assign<span>Mate</span></h1>
-            </a>
-            <nav>
-                <a href="#" id="logout-btn">Logout</a>
-            </nav>
-        </div>
-        <div class="greeting">
+    <div class="top-bar">
+        <a class="brand" href="./dashboard.php">
+            <img class="logo" src="../../../public/assets/Assign.png" alt="Assignmate Logo">
+        </a>
+        <nav>
+            <a href="#" id="logout-btn">Logout</a>
+        </nav>
+    </div>
+    <div class="greeting-box">
+        
+             <img class="greeting-image" src="../../../public/assets/dashcat.png" alt="Greeting Image">
+             <div class="greeting">
             <h1>Hi, <span><?= $_SESSION['full_name'] ?>!</span></h1>
             <p>Welcome to your dashboard, hope you have a productive day!</p>
         </div>
-        <div class="controls">
-            <a href="../view-assignments/view-assignments.php" class="control">Assignments
-                <i class="fa-solid fa-pen-to-square"></i>
-            </a>
-            <a href="../view-subjects/view-subjects.php" class="control">Subjects
-                <i class="fa-solid fa-chalkboard-user"></i>
-            </a>
-            <a href="../view-edit-profile/profile.php" class="control">Profile
-                <i class="fa-regular fa-user"></i>
-            </a>
-            <!-- <a href="../../../controllers/page-not-found-controller.php" class="control">Statistics
-                <i class="fa-solid fa-chart-simple"></i>
-            </a> -->
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="controls">
+                <a href="../view-assignments/view-assignments.php" class="control">Assignments
+                    <i class="fa-solid fa-pen-to-square"></i>
+                </a>
+                <a href="../view-subjects/view-subjects.php" class="control">Subjects
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </a>
+                <a href="../view-timer/timer.php" class="control">Timer
+                    <i class="fa-regular fa-hourglass"></i>
+                </a>
+                <a href="../view-edit-profile/profile.php" class="control">Profile
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
         </div>
-        <div id="logout-modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn">&times;</span>
-                <p>Are you sure you want to logout?</p>
-                <a href="../../../controllers/logout-controller.php" class="btn">Yes</a>
-                <button id="cancel-logout" class="btn">No</button>
+        <div class="main-content">
+            <div id="logout-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <p>Are you sure you want to logout?</p>
+                    <a href="../../../controllers/logout-controller.php" class="btn">Yes</a>
+                    <button id="cancel-logout" class="btn">No</button>
+                </div>
             </div>
         </div>
     </div>
@@ -92,7 +99,5 @@ $result = mysqli_query($conn, $sql);
             });
         });
     </script>
-
 </body>
-
 </html>

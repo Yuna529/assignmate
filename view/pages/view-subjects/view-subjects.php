@@ -16,10 +16,10 @@ $result = mysqli_query($conn, $sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subject List</title>
-    <link rel="stylesheet" href="../../../public/css/globals.scss">
-    <link rel="stylesheet" href="./view-subjects.scss">
+    <link rel="stylesheet" href="../../../public/css/globals.css">
+    <link rel="stylesheet" href="./view-subjects.css">
     <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="../../../public/assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../public/assets/Assign.png" type="image/x-icon">
 </head>
 
 <body>
@@ -27,8 +27,8 @@ $result = mysqli_query($conn, $sql);
     <div class="container">
         <div class='top-bar'>
             <a class="brand" href="../dashboard/dashboard.php">
-                <img src="../../../public/assets/logo.png" alt="Assignmate Logo">
-                <h1>Assign<span>Mate</span></h1>
+                <img src="../../../public/assets/Assign.png" alt="Assignmate Logo">
+             
             </a>
             <nav>
                 <a href="../create-subject/create-subject.php">

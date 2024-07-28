@@ -33,18 +33,18 @@ if ($cmp_count_row = mysqli_fetch_assoc($cmp_count_result)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment List</title>
     <link rel="stylesheet" href="../../../public/css/globals.scss">
-    <link rel="stylesheet" href="./view-assignments.scss">
+    <link rel="stylesheet" href="./view-assignments.css">
     <script src="https://kit.fontawesome.com/ee759840f5.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../../../public/assets/logo.png" type="image/x-icon">
 </head>
 
 <body>
     <?php require_once '../../includes/message.php'; ?>
-    <div class="container">
+    
         <div class='top-bar'>
             <a class="brand" href="../dashboard/dashboard.php">
-                <img src="../../../public/assets/logo.png" alt="Assignmate Logo">
-                <h1>Assign<span>Mate</span></h1>
+                <img src="../../../public/assets/Assign.png" alt="Assignmate Logo">
+              
             </a>
             <nav>
                 <a href="../create-assignment/create-assignment.php">
@@ -53,12 +53,10 @@ if ($cmp_count_row = mysqli_fetch_assoc($cmp_count_result)) {
                 <a href="../dashboard/dashboard.php">Go back</a>
             </nav>
         </div>
-        <!-- <div class="overview">
-            <h1>Assignment Overview:</h1>
-            <div class="sorting">Sort by: <i class="fa-solid fa-sort-down"></i></div>
-        </div> -->
+        <div class="container">
         <div class='view-assignments-main'>
             <div class="main-left">
+                
                 <div class="pending-container">
                     <h1>Remaining:</h1>
                     <h1><?= $count_row['count'] ?></h1>

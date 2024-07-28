@@ -1,5 +1,5 @@
 create database assignmate;
-drop database assignmate;
+
 use assignmate;
 
 CREATE TABLE users (
@@ -17,7 +17,7 @@ CREATE TABLE subjects (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
-drop table users;
+
 
 CREATE TABLE assignments (
     id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE assignments (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
-drop table assignments;
+
 
 delete from assignments where id = 11;
 

@@ -1,0 +1,181 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Ensure the top bar takes full width */
+  background: linear-gradient(135deg, #B1AFFF, #F9F3CC);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 80px; /* Adjust height as needed */
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  height: 90px; /* Adjust height as needed */
+  width: 100%;
+}
+
+.top-bar nav {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar nav a {
+  text-decoration: none;
+  color: #080808;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-bar nav a:hover {
+  background-color: #aacaf1;
+  color: #030303;
+  border-radius: 10px;
+}
+
+.view-assignments-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px; /* Adjust to account for the fixed top bar height */
+}
+
+.main-left {
+  width: 30%;
+}
+
+
+.pending-container, .legend {
+  margin-bottom: 20px;
+}
+
+.pending-container h1, .legend h1 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pending-container h1 {
+  font-size: 2em;
+  color: #2470a0;
+}
+
+.legend .list .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend .list .row div {
+  display: flex;
+  align-items: center;
+}
+
+.legend .list .row div i {
+  margin-right: 10px;
+}
+
+.status-not-started {
+  color: red;
+}
+
+.status-in-progress {
+  color: orange;
+}
+
+.status-completed {
+  color: green;
+}
+
+.assignment-list {
+  width: 65%;
+}
+
+.assignment-card {
+  display: block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-card .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.assignment-card .titlebar {
+  display: flex;
+  align-items: center;
+}
+
+.assignment-card .titlebar i {
+  margin-right: 10px;
+}
+
+.assignment-card .title-right {
+  text-align: right;
+}
+
+.assignment-card .priority {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.priority-high {
+  background-color: red;
+  color: #fff;
+}
+
+.priority-medium {
+  background-color: orange;
+  color: #fff;
+}
+
+.priority-low {
+  background-color: green;
+  color: #fff;
+}
+
+.card-details h5 {
+  color: #666;
+}

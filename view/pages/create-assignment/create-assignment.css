@@ -1,0 +1,109 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #B1AFFF, #F9F3CC);
+  padding: 10px 20px;
+  z-index: 1000;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar .brand {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar .brand img.logo {
+  height: 50px; /* Adjust the height as needed */
+  width: auto;
+}
+
+.top-bar nav {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar nav a {
+  text-decoration: none;
+  color: #080808;
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.top-bar nav a:hover {
+  background-color: #aacaf1;
+  color: #030303;
+  border-radius: 10px;
+}
+
+.create-assignment-container {
+  width: 60%;
+  max-width: 800px;
+  margin: 140px auto 20px auto; /* Adjust margin to push content below the top bar */
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.create-assignment-container h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.create-assignment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-assignment-container label {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.create-assignment-container input,
+.create-assignment-container select,
+.create-assignment-container textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.create-assignment-container input[type="submit"] {
+  background-color: #2470a0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-assignment-container input[type="submit"]:hover {
+  background-color: #1e5a84;
+}
