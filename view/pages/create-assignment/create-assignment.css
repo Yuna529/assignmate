@@ -20,8 +20,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #B1AFFF, #F9F3CC);
-  padding: 10px 20px;
+  background: linear-gradient(135deg, #b1afff, #f9f3cc);
+  padding: 10px 2.5%;
   z-index: 1000;
   height: 80px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -33,8 +33,8 @@ body {
 }
 
 .top-bar .brand img.logo {
-  height: 50px; /* Adjust the height as needed */
-  width: auto;
+  height: auto; /* Adjust the height as needed */
+  width: 10rem;
 }
 
 .top-bar nav {
@@ -55,6 +55,11 @@ body {
   background-color: #aacaf1;
   color: #030303;
   border-radius: 10px;
+}
+
+.container-main {
+  display: flex;
+  margin-top: 80px;
 }
 
 .create-assignment-container {
@@ -106,4 +111,44 @@ body {
 
 .create-assignment-container input[type="submit"]:hover {
   background-color: #1e5a84;
+}
+
+.sidebar {
+  position: relative; /* Fix the sidebar to the left of the viewport */
+  left: 0; /* Align with the left edge */
+  width: 250px; /* Fixed width for the sidebar */
+  background: linear-gradient(
+    135deg,
+    #d2f3ee,
+    #7d82b9
+  ); /* Blue gradient background */
+  padding: 20px;
+  height: 100vh; /* Full height minus the top bar height */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+  overflow-y: auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column; /* Stack controls vertically */
+  gap: 10px; /* Space between controls */
+}
+
+.controls a {
+  text-decoration: none;
+  color: #171515; /* Text color in the sidebar */
+  background-color: #f9f6f2; /* Darker blue background for controls */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls a i {
+  margin-left: 10px;
+}
+
+.controls a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

@@ -10,10 +10,9 @@ body {
   background-color: #f4f4f4;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.container-main {
+  display: flex;
+  margin-top: 80px;
 }
 
 .top-bar {
@@ -21,7 +20,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%; /* Ensure the top bar takes full width */
-  background: linear-gradient(135deg, #B1AFFF, #F9F3CC);
+  background: linear-gradient(135deg, #b1afff, #f9f3cc);
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -63,19 +62,21 @@ body {
 .view-assignments-main {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px; /* Adjust to account for the fixed top bar height */
+  width: 100%;
+  padding: 2.5rem;
 }
 
 .main-left {
   width: 30%;
 }
 
-
-.pending-container, .legend {
+.pending-container,
+.legend {
   margin-bottom: 20px;
 }
 
-.pending-container h1, .legend h1 {
+.pending-container h1,
+.legend h1 {
   font-size: 1.5em;
   color: #333;
   margin-bottom: 10px;
@@ -178,4 +179,44 @@ body {
 
 .card-details h5 {
   color: #666;
+}
+
+.sidebar {
+  position: relative; /* Fix the sidebar to the left of the viewport */
+  left: 0; /* Align with the left edge */
+  width: 250px; /* Fixed width for the sidebar */
+  background: linear-gradient(
+    135deg,
+    #d2f3ee,
+    #7d82b9
+  ); /* Blue gradient background */
+  padding: 20px;
+  height: calc(100vh - 80px); /* Full height minus the top bar height */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+  overflow-y: auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column; /* Stack controls vertically */
+  gap: 10px; /* Space between controls */
+}
+
+.controls a {
+  text-decoration: none;
+  color: #171515; /* Text color in the sidebar */
+  background-color: #f9f6f2; /* Darker blue background for controls */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls a i {
+  margin-left: 10px;
+}
+
+.controls a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }

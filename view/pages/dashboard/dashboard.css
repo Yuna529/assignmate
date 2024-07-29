@@ -18,13 +18,12 @@ body {
   padding: 0;
 }
 
-
 .top-bar {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #B1AFFF, #F9F3CC);
+  background: linear-gradient(135deg, #b1afff, #f9f3cc);
   padding: 5px 20px;
   z-index: 1000; /* Ensure the top bar stays above other content */
   height: 80px;
@@ -74,14 +73,13 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   position: relative;
-
 }
 .greeting-box {
   width: 60%; /* Fixed width for the box */
   max-width: 800px; /* Ensure it doesn't get too large */
   margin: 150px auto 20px auto; /* Center horizontally and add space below top bar */
   padding: 20px;
-  background: #FFF7D4;
+  background: #fff7d4;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -96,7 +94,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
 
- 
   padding: 5px; /* Optional: Padding for the image */
 }
 
@@ -120,14 +117,16 @@ body {
   top: 80px; /* Space for the top bar */
   left: 0; /* Align with the left edge */
   width: 250px; /* Fixed width for the sidebar */
-  background: linear-gradient(135deg,#D2F3EE, #7D82B9); /* Blue gradient background */
+  background: linear-gradient(
+    135deg,
+    #d2f3ee,
+    #7d82b9
+  ); /* Blue gradient background */
   padding: 20px;
   height: calc(100vh - 80px); /* Full height minus the top bar height */
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
-  overflow-y: auto; 
+  overflow-y: auto;
 }
-
-
 
 .controls {
   display: flex;
@@ -186,7 +185,7 @@ body {
 .modal .btn {
   text-decoration: none;
   color: #fff;
-  background-color: #D7E4C0;
+  background-color: #d7e4c0;
   padding: 10px 20px;
   border-radius: 5px;
   margin: 10px;

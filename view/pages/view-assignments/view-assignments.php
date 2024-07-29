@@ -40,23 +40,38 @@ if ($cmp_count_row = mysqli_fetch_assoc($cmp_count_result)) {
 
 <body>
     <?php require_once '../../includes/message.php'; ?>
-    
-        <div class='top-bar'>
-            <a class="brand" href="../dashboard/dashboard.php">
-                <img src="../../../public/assets/Assign.png" alt="Assignmate Logo">
-              
+
+    <div class='top-bar'>
+        <a class="brand" href="../dashboard/dashboard.php">
+            <img src="../../../public/assets/Assign.png" alt="Assignmate Logo">
+
+        </a>
+        <nav>
+            <a href="../create-assignment/create-assignment.php">
+                <pre><i class="fa-solid fa-plus"></i>  Create Assignment</pre>
             </a>
-            <nav>
-                <a href="../create-assignment/create-assignment.php">
-                    <pre><i class="fa-solid fa-plus"></i>  Create Assignment</pre>
+            <a href="../dashboard/dashboard.php">Go back</a>
+        </nav>
+    </div>
+    <div class="container-main">
+        <div class="sidebar">
+            <div class="controls">
+                <a href="../view-assignments/view-assignments.php" class="control">Assignments
+                    <i class="fa-solid fa-pen-to-square"></i>
                 </a>
-                <a href="../dashboard/dashboard.php">Go back</a>
-            </nav>
+                <a href="../view-subjects/view-subjects.php" class="control">Subjects
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </a>
+                <a href="../view-timer/timer.php" class="control">Timer
+                    <i class="fa-regular fa-hourglass"></i>
+                </a>
+                <a href="../view-edit-profile/profile.php" class="control">Profile
+                    <i class="fa-regular fa-user"></i>
+                </a>
+            </div>
         </div>
-        <div class="container">
         <div class='view-assignments-main'>
             <div class="main-left">
-                
                 <div class="pending-container">
                     <h1>Remaining:</h1>
                     <h1><?= $count_row['count'] ?></h1>

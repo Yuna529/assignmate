@@ -32,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 <body>
     <?php require_once '../../includes/message.php'; ?>
     <div class="container">
+        
         <div class='top-bar'>
             <div class='assignment-header'>
                 <a class="brand" href="../dashboard/dashboard.php">
@@ -48,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
                 <a href="../view-assignments/view-assignments.php">Go back</a>
             </nav>
         </div>
+        
         <div class="main">
             <div class="header">
                 <div class='titlebar'>
